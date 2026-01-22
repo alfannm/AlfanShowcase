@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mobile Apps Showcase | Alfan Na Im</title>
+  <meta name="description" content="A clean, professional showcase of three mobile application projects." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body id="top">
+  <div class="progress" id="progress"></div>
+  <div class="grid" aria-hidden="true"></div>
+
+  <div class="wrap">
+    <header class="nav">
+      <div class="nav-inner">
+        <div class="brand">
+          <span class="dot"></span>
+          <span>Alfan Na Im</span>
+        </div>
+        <nav class="navlinks">
+          <a href="#top">Home</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a class="btn primary pill" href="#apps">View Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="reveal">
+        <div class="kicker"><span class="spark"></span> Project Showcase · 3 Mobile Apps </div>
+        <h1>
+          Mobile Apps, <span class="grad">presented</span>.
+        </h1>
+        <p class="lead">
+          I am a Mobile Computing student from Universiti Malaysia Terengganu. This page summarizes my work in Flutter and Native Android, focusing on real-world problem solving, engineering architecture (MVVM, Provider), and clean UX.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#apps">Explore 3 Apps</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+          <a class="btn ghost" href="https://github.com/alfannm" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-card reveal">
+        <div class="hero-card-inner">
+          <div class="mini-title">Quick Snapshot</div>
+          <div class="stats">
+            <div class="stat">
+              <b>3</b>
+              <span>Mobile apps</span>
+            </div>
+            <div class="stat">
+              <b>2</b>
+              <span>Frameworks (Flutter & Native Android)</span>
+            </div>
+            <div class="stat">
+              <b>1</b>
+              <span>Focus on Quality</span>
+            </div>
+          </div>
+
+          <div class="chips">
+            <div class="chip">Dart</div>
+            <div class="chip">Java</div>
+            <div class="chip">XML</div>
+            <div class="chip">Flutter</div>
+            <div class="chip">Android Native</div>
+            <div class="chip">MVVM / Provider</div>
+            <div class="chip">Firebase / Room DB</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPS -->
+    <section id="apps">
+      <div class="section-head reveal">
+        <div>
+          <h2>Projects</h2>
+          <p>Each project is presented in a simple, interview-friendly structure: problem → solution → engineering decisions → improvements.</p>
+        </div>
+      </div>
+
+      <div class="apps">
+
+        <!-- APP 1 -->
+        <article class="app reveal" id="app1">
+          <div class="app-inner">
+            <div>
+              <div class="app-title">
+                <h3>App 1 — JiranLink</h3>
+                <div class="badges">
+                  <span class="badge accent">Flutter</span>
+                  <span class="badge">Firebase</span>
+                  <span class="badge">Geolocation</span>
+                </div>
+              </div>
+
+              <div class="grid2">
+                <div class="box">
+                  <h4>Problem</h4>
+                  <p>
+                    Residential neighborhoods suffer from resource redundancy (underutilized household tools) and lack a trusted, hyper-local platform for borrowing and renting items.
+                  </p>
+                </div>
+
+                <div class="box">
+                  <h4>Solution</h4>
+                  <ul>
+                    <li>Peer-to-Peer Marketplace: A dual-interface system allowing users to switch between Owner and Borrower roles to rent or share equipment.</li>
+                    <li>Smart Discovery: Implements geo-location services to automatically filter search results by the user's current State and District.</li>
+                    <li>Booking Lifecycle: A complete transaction flow from request to payment and item return, managed via a status-tracking system.</li>
+                  </ul>
+                </div>
+
+                <div class="box">
+                  <h4>Engineering Decisions</h4>
+                  <ul>
+                    <li>State Management: Used the Provider pattern to manage shared state across complex widget trees (Auth, Bookings, Messages).</li>
+                    <li>Backend: Built on Google Firebase using Firestore for real-time data, Auth for user management, and Storage for media assets.</li>
+                    <li>Architecture: Modular design with a consistent top-down structure (MaterialApp → MultiProvider → AuthGate).</li>
+                  </ul>
+                </div>
+
+                <div class="box">
+                  <h4>Challenges & Improvements</h4>
+                  <ul>
+                    <li>Challenge: Ensuring location accuracy and filtering relevance for hyper-local queries.</li>
+                    <li>Next: Enhance scalability with advanced geo-querying techniques and implement pagination for listing feeds.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cta compact">
+                <a class="btn primary" href="https://github.com/alfannm/JiranLinkApp" target="_blank" rel="noreferrer">Repository</a>
+                <a class="btn" href="https://github.com/alfannm/JiranLinkApp/releases/tag/v1.0.0" target="_blank" rel="noreferrer">APK</a>
+              </div>
+            </div>
+
+            <aside class="preview">
+              <div class="preview-top">
+                <small>Preview (tap screenshots)</small>
+                <div class="links">
+                  <a class="linkbtn" href="https://github.com/alfannm/JiranLinkApp" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+
+              <div class="gallery" data-app="App 1 — JiranLink">
+                <div class="shot" data-title="Onboarding / Welcome Screen" data-desc="This screen introduces JiranLink’s core idea: building stronger neighborhoods through shared resources. The minimalist layout, friendly icon, and short message quickly communicate what the app is about without overwhelming new users. The onboarding flow is designed to set context before authentication, improving user understanding and retention.">
+                  <img src="assets/app1-1.png" alt="App 1 screenshot 1" />
+                  <div class="fallback">Add image: <br><b>assets/app1-1.png</b></div>
+                </div>
+                <div class="shot" data-title="Authentication (Login & Register)" data-desc="This screen handles user authentication, allowing users to log in or register using email/password or Google Sign-In. Input validation (minimum password length, visibility toggle) improves usability and reduces errors. The tab-based switch between Login and Register keeps the flow clean and intuitive.">
+                  <img src="assets/app1-2.png" alt="App 1 screenshot 2" />
+                  <div class="fallback">Add image: <br><b>assets/app1-2.png</b></div>
+                </div>
+                <div class="shot" data-title="Home / Marketplace Dashboard" data-desc="This is the main marketplace screen, where users discover tools, skills, and services shared within their local community. Location-based filtering (State/District) ensures hyper-local relevance, while category shortcuts and featured listings improve discoverability. The bottom navigation enables smooth switching between core features like browsing, posting items, messaging, and profile management.">
+                  <img src="assets/app1-3.png" alt="App 1 screenshot 3" />
+                  <div class="fallback">Add image: <br><b>assets/app1-3.png</b></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+        <!-- APP 2 -->
+        <article class="app reveal" id="app2">
+          <div class="app-inner">
+            <div>
+              <div class="app-title">
+                <h3>App 2 — FuelWise</h3>
+                <div class="badges">
+                  <span class="badge">Android Native</span>
+                  <span class="badge">Java / XML</span>
+                  <span class="badge">Room DB</span>
+                </div>
+              </div>
+
+              <div class="grid2">
+                <div class="box">
+                  <h4>Problem</h4>
+                  <p>Vehicle owners lack a centralized way to track fuel expenses, leading to inaccurate manual calculations and difficulty in identifying vehicle performance issues.</p>
+                </div>
+                <div class="box">
+                  <h4>Solution</h4>
+                  <ul>
+                    <li>Digital Logbook: Replaces paper receipts with a centralized digital record for multiple vehicles.</li>
+                    <li>Auto-Calculation: Automatically computes key metrics like Fuel Efficiency (L/100km) and Cost-per-Kilometer (RM/km) to eliminate human error.</li>
+                    <li>Vehicle Profiles: Allows management of distinct profiles for different vehicles, each with its own history and statistics.</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <h4>Engineering Decisions</h4>
+                  <ul>
+                    <li>Architecture: Implemented MVVM (Model-View-ViewModel) to separate the UI from business logic and ensure data persistence during configuration changes.</li>
+                    <li>Data Layer: Used the Room Persistence Library (SQLite abstraction) for robust local storage and offline capability.</li>
+                    <li>Performance: Executed all database write operations on background threads using ExecutorService to prevent UI blocking.</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <h4>Challenges & Improvements</h4>
+                  <ul>
+                    <li>Challenge: Enforcing data integrity, such as preventing users from entering mileage lower than previous records.</li>
+                    <li>Next: Add data visualization (charts) for consumption trends and cloud backup for data security.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cta compact">
+                <a class="btn primary" href="https://github.com/alfannm/FuelWise" target="_blank" rel="noreferrer">Repository</a>
+                <a class="btn" href="https://github.com/alfannm/FuelWise/releases/tag/v1.0.0" target="_blank" rel="noreferrer">APK</a>
+              </div>
+            </div>
+
+            <aside class="preview">
+              <div class="preview-top">
+                <small>Preview (tap screenshots)</small>
+                <div class="links">
+                  <a class="linkbtn" href="https://github.com/alfannm/FuelWise" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+
+              <div class="gallery" data-app="App 2 — FuelWise">
+                <div class="shot" data-title="Dashboard (Home Screen)" data-desc="This screen serves as the main dashboard, summarizing fuel efficiency and cost metrics for the selected vehicle. Key indicators such as average cost per kilometer, average fuel consumption (L/100km), total distance, and total cost are calculated automatically from stored records. Quick actions allow users to manage vehicles, add new fuel records, or view detailed logs.">
+                  <img src="assets/app2-1.png" alt="App 2 screenshot 1" />
+                  <div class="fallback">Add image: <br><b>assets/app2-1.png</b></div>
+                </div>
+                <div class="shot" data-title="Fuel Log & Efficiency Breakdown" data-desc="This screen displays a chronological fuel log with per-record breakdowns. Each entry shows fuel volume, cost, mileage, and calculated efficiency since the last fill-up. The app enforces logical comparisons between records (distance traveled since previous entry) to ensure accurate efficiency calculations.">
+                  <img src="assets/app2-2.png" alt="App 2 screenshot 2" />
+                  <div class="fallback">Add image: <br><b>assets/app2-2.png</b></div>
+                </div>
+                <div class="shot" data-title="Vehicle Management" data-desc="This screen allows users to manage multiple vehicles, each with its own independent fuel history. Users can add, edit, delete, and mark an active vehicle, which directly affects dashboard calculations and logs. This design supports scalability for users with more than one vehicle (e.g., car + motorcycle).">
+                  <img src="assets/app2-3.png" alt="App 2 screenshot 3" />
+                  <div class="fallback">Add image: <br><b>assets/app2-3.png</b></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+        <!-- APP 3 -->
+        <article class="app reveal" id="app3">
+          <div class="app-inner">
+            <div>
+              <div class="app-title">
+                <h3>App 3 — RideShare Buddy</h3>
+                <div class="badges">
+                  <span class="badge">Flutter</span>
+                  <span class="badge">FluidBackgroundPainter</span>
+                </div>
+              </div>
+
+              <div class="grid2">
+                <div class="box">
+                  <h4>Problem</h4>
+                  <p>Students face prohibitive costs from commercial e-hailing services and acute parking congestion at university campuses.</p>
+                </div>
+                <div class="box">
+                  <h4>Solution</h4>
+                  <ul>
+                    <li>Trusted Network: A "Walled Garden" ecosystem that requires Matric/Staff ID verification to ensure safety and trust.</li>
+                    <li>Dual-Stream Feed: Features separate feeds for "Ride Offers" and "Ride Requests" to efficiently match drivers with passengers.</li>
+                    <li>Campus-Specific Logic: Custom filtering based on specific university landmarks (e.g., Kolej Kediaman, Library).</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <h4>Engineering Decisions</h4>
+                  <ul>
+                    <li>UI Optimization: Utilized ListView.builder for lazy-loading to maintain high performance with large lists of ride offers.</li>
+                    <li>Component Reuse: Created a reusable RideCard widget that adapts its appearance (color/layout) for both offers and requests to reduce code duplication.</li>
+                    <li>State Management: Leveraged StatefulWidget to handle dynamic updates for filters and profile forms.</li>
+                  </ul>
+                </div>
+                <div class="box">
+                  <h4>Challenges & Improvements</h4>
+                  <ul>
+                    <li>Challenge: Managing state consistency when switching between filter options and dynamic lists.</li>
+                    <li>Next: Integrate a real-time in-app chat (replacing the current WhatsApp link) and a digital payment gateway.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cta compact">
+                <a class="btn primary" href="https://github.com/alfannm/RideShareBuddy" target="_blank" rel="noreferrer">Repository</a>
+                <a class="btn" href="https://youtu.be/D-RNE9FAg2c" target="_blank" rel="noreferrer">Demo Video</a>
+              </div>
+            </div>
+
+            <aside class="preview">
+              <div class="preview-top">
+                <small>Preview (tap screenshots)</small>
+                <div class="links">
+                  <a class="linkbtn" href="https://github.com/alfannm/RideShareBuddy" target="_blank" rel="noreferrer">GitHub</a>
+                </div>
+              </div>
+
+              <div class="gallery" data-app="App 3 — RideShare Buddy">
+                <div class="shot" data-title="Home / Entry Point" data-desc="This screen is the main entry point where users choose their intent: finding a ride or offering a ride. The separation into two primary actions removes ambiguity and matches real user behavior in ride-sharing scenarios. A collapsible My Profile section provides quick access to user details without cluttering the main flow.">
+                  <img src="assets/app3-1.png" alt="App 3 screenshot 1" />
+                  <div class="fallback">Add image: <br><b>assets/app3-1.png</b></div>
+                </div>
+                <div class="shot" data-title="Ride Requests Listing" data-desc="This screen displays a list of active ride requests, each showing pickup location, destination, departure time, and current rider count. Filtering options allow users to narrow results by pickup point, destination, and time, making the system usable even as request volume grows. Each card is structured for fast scanning, prioritizing location and time over secondary details.">
+                  <img src="assets/app3-2.png" alt="App 3 screenshot 2" />
+                  <div class="fallback">Add image: <br><b>assets/app3-2.png</b></div>
+                </div>
+                <div class="shot" data-title="Create Ride Request" data-desc="This screen enables users to create a ride request by entering trip details such as pickup location, destination, time, and number of riders. Mandatory fields ensure valid submissions, while optional notes allow users to provide context (e.g., luggage requirements). The form is intentionally minimal to reduce friction while still collecting all required data for matching.">
+                  <img src="assets/app3-3.png" alt="App 3 screenshot 3" />
+                  <div class="fallback">Add image: <br><b>assets/app3-3.png</b></div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="section-head reveal">
+        <div>
+          <h2>About</h2>
+          <p>I build mobile apps with a focus on clear architecture, polished UX, and reliable performance. I have shipped Flutter and Android Native work and enjoy turning rough ideas into usable products.</p>
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="callout reveal">
+          <h3>How I build</h3>
+          <p>
+            I prioritize clean architecture and predictable state management. Whether using MVVM in Android Native or Provider in Flutter, I ensure my apps are maintainable and scalable. I believe in shipping MVPs fast, validating with real user needs, and iterating based on feedback.
+          </p>
+        </div>
+
+        <div class="callout reveal">
+          <h3>What I’m looking for</h3>
+          <p>
+            I am looking for opportunities in Mobile App Development (Flutter or Android Native) where I can apply my skills in full-cycle development—from UI design to backend integration—and contribute to high-impact products.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="section-head reveal">
+        <div>
+          <h2>Contact</h2>
+          <p>If you’d like to review my code, try the apps, or discuss opportunities, you can reach me through the channels below.</p>
+        </div>
+      </div>
+
+      <div class="callout reveal">
+        <h3>Let’s talk</h3>
+        <p>
+          I’m open to internship, junior, or project-based opportunities in mobile app development. Feel free to reach out if you’d like to discuss my work or request access to app builds.
+        </p>
+        <div class="contactline">
+          <span>📧 alfan1928naim@gmail.com</span>
+          <span>•</span>
+          <span>🌐 github.com/alfannm</span>
+          <span>•</span>
+          <span>🔗 linkedin.com/in/alfannm/</span>
+          <span>•</span>
+          <span>📍 Manjung, Perak, Malaysia</span>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <span>© <span id="year"></span> Alfan Na Im · Mobile App Portfolio</span>
+      <span>Designed and built by me using plain HTML, CSS, and JavaScript for reliability.</span>
+    </footer>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+      <div class="modal-head">
+        <b id="modalTitle">Screenshot</b>
+        <button class="modal-close" id="modalClose" type="button">Close ✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-media">
+          <img id="modalImg" alt="Expanded screenshot" />
+        </div>
+        <div class="modal-info">
+          <h4 id="modalApp">App</h4>
+          <p id="modalDesc">Description</p>
+          <div class="kbd">
+            Tip: <span>Esc</span> to close
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
